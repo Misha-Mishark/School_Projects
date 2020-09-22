@@ -214,8 +214,9 @@ public class PizzaCost2 extends javax.swing.JFrame {
             int size = Integer.parseInt(size_box.getText());
             int toppings = Integer.parseInt(toppings_box.getText());
         } catch (Exception e) {
-            JFrame f = new JFrame();
-            JOptionPane.showMessageDialog(f, "Invalid-input. Integers only.");
+           
+            JOptionPane.showMessageDialog(this, "Invalid-input. Integers only.");
+            return;
         }
  
       int size=Integer.parseInt(size_box.getText()) ;
